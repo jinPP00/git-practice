@@ -10,5 +10,9 @@ jobs:
         run : ls -al
       - name: 파이썬 패키지!!
         run : pip list
+      - name: pip 업그레이드!!
+        run : python -m pip install --upgrade pip
+      - name: 패키지 인스톨!!
+        run : pip install -r requirements.txt
       - name: 파이썬 실행!!
         run : python test.py
