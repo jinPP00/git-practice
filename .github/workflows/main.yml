@@ -6,5 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses : actions/checkout@v2
+      - name: 파이썬 목록
+        run : ls -al
       - name: 파이썬 실행!!
         run : python test.py
