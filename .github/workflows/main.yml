@@ -8,5 +8,7 @@ jobs:
       - uses : actions/checkout@v2
       - name: 파이썬 목록
         run : ls -al
+      - name: 파이썬 패키지!!
+        run : pip list
       - name: 파이썬 실행!!
         run : python test.py
